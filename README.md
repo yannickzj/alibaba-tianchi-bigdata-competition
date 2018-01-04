@@ -19,7 +19,11 @@ Here's the software you need to run the program:
 
 ## How to run the program
 
-In order to generate the solution, we first run the code in the *featureExtraction* directory to generate the preprocessed data. The order of execution for feature engineering is described as follows:
+The general program execution structure is shown as follows.
+
+<p align="center"><img src="/README/program_structure.png" width="400"></p>
+
+First of all, you need to run the code in the *featureExtraction* directory to generate the preprocessed data. The order of execution for feature engineering is described as follows:
 
 + *timeHistoryData.ipynb*: transfer the original transaction data to time history data of custom flow;
 
@@ -27,9 +31,7 @@ In order to generate the solution, we first run the code in the *featureExtracti
 
 + *featureEnsemble.ipynb*: ensemble all preprocessed features into ensemble data files for final training, validation and testing.
 
-After generating feature data, the scripts in the models folder can be executed to select best parameters for each single model and train the ensemble model for final prediction submission. The general program execution structure is shown as follows.
-
-<p align="center"><img src="/README/program_structure.png" width="500"></p>
+After generating feature data, the scripts in the models folder can be executed to select best parameters for each single model and train the ensemble model for final prediction submission. 
 
 ## Official evaluation
 
